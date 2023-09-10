@@ -119,6 +119,7 @@
 </div>
 </div>
 </section>
+
 <section class="ftco-section ftco-no-pt ftco-no-pb">
 <div class="container-fluid px-md-0">
 <div class="row no-gutters">
@@ -134,16 +135,18 @@
 <div class="text-center">
 <h3 class="mb-4">Free Consultation</h3>
 </div>
-<form action="#" class="appointment-form">
+
+<form class="appointment-form" >
 <div class="row">
 <div class="col-md-12 col-lg-6 col-xl-4">
 <div class="form-group">
-<input type="text" class="form-control" placeholder="First Name">
+  <input type="text" class="form-control" id="ptname" name="ptname" placeholder="First Name">
+
 </div>
 </div>
 <div class="col-md-12 col-lg-6 col-xl-4">
 <div class="form-group">
-<input type="text" class="form-control" placeholder="Last Name">
+  <input type="text" class="form-control" id="ptplace" name="ptplace" placeholder="place">
 </div>
 </div>
 <div class="col-md-12 col-lg-6 col-xl-4">
@@ -151,13 +154,16 @@
 <div class="form-field">
 <div class="select-wrap">
 <div class="icon"><span class="ion-ios-arrow-down"></span></div>
-<select name id class="form-control">
-<option value>Department</option>
-<option value>Neurology</option>
-<option value>Cardiology</option>
-<option value>Dental</option>
-<option value>Ophthalmology</option>
-<option value>Other Services</option>
+<select class="form-control" name="ptdep" id="ptdep">
+  <option value="">Treatment Preferred</option>
+  <option value="Implant planning ">Implant planning </option>
+  <option value="Impacted teeth analysis">Impacted teeth analysis</option>
+  <option value="Pre endodontic assessment ">Pre endodontic assessment </option>
+  <option value="Post endodontic assessment ">Post endodontic assessment </option>
+  <option value="Orthodontics treatment planning ">Orthodontics treatment planning  </option>
+  <option value="Periodontal assessment ">Periodontal assessment </option>
+  <option value="Sinus evaluation">Sinus evaluation</option>
+  <option value="TMJ evaluation">TMJ evaluation </option>
 </select>
 </div>
 </div>
@@ -167,7 +173,8 @@
 <div class="form-group">
 <div class="input-wrap">
 <div class="icon"><span class="ion-md-calendar"></span></div>
-<input type="text" class="form-control appointment_date" placeholder="Date">
+<input type="text" class="form-control appointment_date" id="date" name="date" placeholder="Date">
+
 </div>
 </div>
 </div>
@@ -175,13 +182,13 @@
 <div class="form-group">
 <div class="input-wrap">
 <div class="icon"><span class="ion-ios-clock"></span></div>
-<input type="text" class="form-control appointment_time" placeholder="Time">
+<input type="text" class="form-control appointment_time" id="time" name="time" placeholder="Time">
 </div>
 </div>
 </div>
 <div class="col-md-12 col-lg-6 col-xl-4">
 <div class="form-group">
-<input type="submit" value="Appointment" class="btn btn-secondary py-2 px-4">
+  <input type="submit" value="Submit" onclick="gotowhatsapp();" class="btn btn-secondary py-2 px-4">
 </div>
 </div>
 </div>
@@ -746,6 +753,31 @@ Copyright &copy;<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728
 </div>
 </footer>
 
+<script>
+  console.log("This function works fine")
+	function gotowhatsapp() {
+    var ptname  = document.getElementById("ptname").value;
+    var place = document.getElementById("ptplace").value;
+    var ptdep = document.getElementById("ptdep").value;
+    var date  = document.getElementById("date").value;
+    var time  = document.getElementById("time").value;
+
+
+    var url = "https://wa.me/918281970310?text=" +
+              "*MaxD Digital Imaging Center* %0A" +
+              "Malawi Complex, Konnamankara Road, Adoor %0A"+
+              "Mob: 8281 9703 10 %0A%0A" +
+              "Hello Doctor, here are my booking details%0A%0A" +
+              "*Name*: " + ptname + "%0A" +
+              "*Place*: " + place + "%0A%0A" +
+              "*Treatment*: " + ptdep + "%0A%0A" +
+              "*Date*: " + date + "%0A" +
+              "*Time*: " + time;
+
+    window.open(url, '_blank');
+}
+	</script>
+
 <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" /><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00" /></svg></div>
 <script src="js/jquery.min.js"></script>
 <script src="js/jquery-migrate-3.0.1.min.js"></script>
@@ -765,14 +797,6 @@ Copyright &copy;<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728
 <script src="js/google-map.js"></script>
 <script src="js/main.js"></script>
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-23581568-13');
-</script>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8b253dfea2ab4077af8c6f58422dfbfd1689876627854" integrity="sha512-bjgnUKX4azu3dLTVtie9u6TKqgx29RBwfj3QXYt5EKfWM/9hPSAI/4qcV5NACjwAo8UtTeWefx6Zq5PHcMm7Tg==" data-cf-beacon='{"rayId":"8006e267398e1be3","version":"2023.8.0","b":1,"token":"cd0b4b3a733644fc843ef0b185f98241","si":100}' crossorigin="anonymous"></script>
 </body>
 
