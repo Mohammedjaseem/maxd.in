@@ -27,8 +27,8 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-1">Phone</h4>
-                    <p className="text-gray-600">+91 123 456 7890</p>
-                    <p className="text-gray-600">+91 098 765 4321</p>
+                    <p className="text-gray-600">+91 97783 10668</p>
+                    <p className="text-gray-600">+91 97783 10668</p>
                   </div>
                 </div>
 
@@ -50,9 +50,7 @@ const Contact = () => {
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-1">Address</h4>
                     <p className="text-gray-600">
-                      123 Healthcare Complex,<br />
-                      Medical District,<br />
-                      Your City - 123456, India
+                      Room No. 27/796,1087, Malawi Complex, Konnamankara Road, Adoor
                     </p>
                   </div>
                 </div>
@@ -134,7 +132,7 @@ const Contact = () => {
                   type="tel"
                   id="phone"
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-                  placeholder="+91 123 456 7890"
+                  placeholder="+91 97783 10668"
                 />
               </div>
 

@@ -127,9 +127,9 @@ const Services = () => {
                   <IndianRupee className="w-5 h-5" />
                   <span>{service.price}</span>
                 </div>
-                <button className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors text-sm font-medium">
+                <a href="http://wa.me/919778310668" className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors text-sm font-medium">
                   Book Now
-                </button>
+                </a>
               </div>
             </div>
           ))}

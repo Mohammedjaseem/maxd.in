@@ -72,7 +72,7 @@ const Hero = () => {
               {/* CBCT Machine Image */}
               <div className="aspect-square bg-gradient-to-br from-sky-100 to-blue-100 rounded-2xl overflow-hidden shadow-inner">
                 <img 
-                  src="https://images.pexels.com/photos/6812561/pexels-photo-6812561.jpeg?auto=compress&cs=tinysrgb&w=800" 
+                  src="https://i0.wp.com/capitaldentalequipment.com/wp-content/uploads/2021/10/hepworth-img-1.jpg?fit=848%2C545&ssl=1" 
                   alt="CBCT 3D Dental Imaging Machine"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                 />
@@ -131,7 +131,7 @@ const Hero = () => {
                 <div className="text-sm text-gray-600">Full View</div>
               </div>
               <div className="space-y-2">
-                <div className="text-3xl font-bold text-orange-600">15+</div>
+                <div className="text-3xl font-bold text-orange-600">3+</div>
                 <div className="text-sm text-gray-600">Years Experience</div>
               </div>
             </div>

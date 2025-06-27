@@ -99,7 +99,7 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-blue-400" />
-                <span className="text-gray-300">+91 123 456 7890</span>
+                <span className="text-gray-300">+91 97783 10668</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-blue-400" />
@@ -108,9 +108,7 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-blue-400 mt-1" />
                 <span className="text-gray-300">
-                  123 Healthcare Complex,<br />
-                  Medical District,<br />
-                  Your City - 123456, India
+                  Room No. 27/796,1087, Malawi Complex, Konnamankara Road, Adoor
                 </span>
               </div>
             </div>
@@ -120,7 +118,7 @@ const Footer = () => {
         <div className="border-t border-gray-800 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
-              © 2024 MaxD Digital 3D Dental & Facial Imaging Centre. All rights reserved.
+              © 2025 MaxD Digital 3D Dental & Facial Imaging Centre. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">
